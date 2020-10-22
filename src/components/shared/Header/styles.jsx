@@ -19,5 +19,14 @@ export default {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
     }
+
+    p{
+      align-items: center;
+      color: #2c3e50;
+      font-size: large;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
   `
+
 }

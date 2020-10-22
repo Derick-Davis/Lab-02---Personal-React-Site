@@ -1,8 +1,12 @@
 import React from 'react';
+import Home from '../Home'
+import About from '../About'
 
 // You're likely missing some imports...
 import {
+  Link,
   BrowserRouter as Router,
+  Route,
   Switch
 } from 'react-router-dom';
 
@@ -16,16 +20,21 @@ const Nav = () => {
       <Styles.Nav>
         <ul>
           <li>
-            {/* Your link to home here */}
+            <Link to="/">Home</Link>
           </li>
           <li>
-            {/* Your link to about here */}
+            <Link to="/About">About</Link>
           </li>
         </ul>
       </Styles.Nav>
 
       <Switch>
-        {/* Your Routes Here */}
+        <Route exact path="/">
+          <Home/>
+        </Route> 
+        <Route exact path="/About">
+          <About/>
+        </Route>
       </Switch>
     </Router>
   );
